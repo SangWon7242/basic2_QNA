@@ -2,8 +2,7 @@ package com.sbs.basic2.boundedContext.question.entity;
 
 import com.sbs.basic2.boundedContext.answer.Entity.Answer;
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -11,6 +10,9 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class Question {
   @Id // Primary Key
   @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-incrementing ID
