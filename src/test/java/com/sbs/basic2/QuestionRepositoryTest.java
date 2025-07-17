@@ -39,5 +39,6 @@ class QuestionRepositoryTest {
         .build();
 
     questionRepository.save(q2);  // 두번째 질문 저장
+    // 수정
   }
 }
